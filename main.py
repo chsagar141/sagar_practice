@@ -59,3 +59,48 @@ def get_student(id: str):
         )
     else:
         return student
+
+
+@app.get("/alldb/{id}/marks")
+def get_marks(id: str):
+    student = full_db.get("students", {}).get(id)
+    if not student:
+        raise HTTPException(
+            status_code=404,
+            detail="Id not found"
+        )
+    m1 = student.get("mark1", 0)
+    m2 = student.get("mark2", 0)
+    m3 = student.get("mark3", 0)
+    return {
+        "m1": m1,
+        "m2": m2,
+        "m3": m3,
+        "full_m123": m1 + m2 + m3
+    }
+
+
+@app.get("/topers")
+def top_std(limit: int = 3):
+    student = full_db.get("students", {})
+    if not student:
+        raise HTTPException(
+            status_code=404,
+            detail="Not Found"
+        )
+    ranked = []
+
+    for sid, student in student.items():
+        total = (
+            student.get("mark1", 0) +
+            student.get("mark2", 0) +
+            student.get("mark3", 0)
+        )
+        ranked.append({
+            "id": sid,
+            "name": student.get("name"),
+            "student_id": student.get("student_id"),
+            "total_marks": total
+        })
+    ranked.sort(key=lambda x: x["total_marks"], reverse=True)
+    return ranked[:limit]
