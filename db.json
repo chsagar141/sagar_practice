@@ -1,0 +1,104 @@
+{
+    "students": {
+        "1": {
+            "student_id": 1,
+            "name": "Rahul Sharma",
+            "roll": "CS101",
+            "class": "BCA",
+            "branch": "Computer Science",
+            "mark1": 78,
+            "mark2": 85,
+            "mark3": 90
+        },
+        "2": {
+            "student_id": 2,
+            "name": "Ananya Verma",
+            "roll": "CS102",
+            "class": "BCA",
+            "branch": "Computer Science",
+            "mark1": 88,
+            "mark2": 91,
+            "mark3": 84
+        },
+        "3": {
+            "student_id": 3,
+            "name": "Amit Kumar",
+            "roll": "IT201",
+            "class": "BSc",
+            "branch": "Information Technology",
+            "mark1": 65,
+            "mark2": 72,
+            "mark3": 70
+        },
+        "4": {
+            "student_id": 4,
+            "name": "Priya Singh",
+            "roll": "CS103",
+            "class": "BCA",
+            "branch": "Computer Science",
+            "mark1": 92,
+            "mark2": 89,
+            "mark3": 95
+        },
+        "5": {
+            "student_id": 5,
+            "name": "Rohit Das",
+            "roll": "ME101",
+            "class": "BTech",
+            "branch": "Mechanical",
+            "mark1": 70,
+            "mark2": 68,
+            "mark3": 75
+        },
+        "6": {
+            "student_id": 6,
+            "name": "Sneha Patil",
+            "roll": "EC201",
+            "class": "BTech",
+            "branch": "Electronics",
+            "mark1": 85,
+            "mark2": 88,
+            "mark3": 82
+        },
+        "7": {
+            "student_id": 7,
+            "name": "Karan Malhotra",
+            "roll": "CS104",
+            "class": "BCA",
+            "branch": "Computer Science",
+            "mark1": 60,
+            "mark2": 65,
+            "mark3": 58
+        },
+        "8": {
+            "student_id": 8,
+            "name": "Neha Gupta",
+            "roll": "IT202",
+            "class": "BSc",
+            "branch": "Information Technology",
+            "mark1": 90,
+            "mark2": 93,
+            "mark3": 89
+        },
+        "9": {
+            "student_id": 9,
+            "name": "Arjun Reddy",
+            "roll": "CE301",
+            "class": "BTech",
+            "branch": "Civil",
+            "mark1": 74,
+            "mark2": 77,
+            "mark3": 80
+        },
+        "10": {
+            "student_id": 10,
+            "name": "Pooja Nair",
+            "roll": "CS105",
+            "class": "BCA",
+            "branch": "Computer Science",
+            "mark1": 86,
+            "mark2": 84,
+            "mark3": 88
+        }
+    }
+}
